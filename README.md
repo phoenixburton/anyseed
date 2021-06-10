@@ -2,7 +2,7 @@
 Generating seed from any mnemonic phrase
 
 ## Using
-```html
+```python
   from anyseed import get_seed
   words = "online shift magic dog obtain clog bus hello farm island style onion suffer ensure bean"
   password = ""
