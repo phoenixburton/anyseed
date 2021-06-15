@@ -16,5 +16,5 @@ Generating seed from any mnemonic phrase
   # Type: bip39
   # Seed: 96d48cc015cecbf01b5d06da2ec59fd2849e768147a06e29053b45d800517f4374107d846175ac760535f176d1b7f771461c871c7bb3247f0c63c92727a98829
 ```
-Works with electrum and bip39 mnemonics.
+Works with electrum and bip39 mnemonics words and languages.
 Possible types: ["electrum", "bip39", "unknown"]
