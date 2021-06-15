@@ -9,12 +9,12 @@ Generating seed from any mnemonic phrase
 ## Using
 ```python
   from anyseed import get_seed
-  words = "online shift magic dog obtain clog bus hello farm island style onion suffer ensure bean"
+  words = "pelican orphan cherry mouse lucky never ketchup cross million cross blue bring parade shadow steak"
   password = ""
-  seed = get_seed(words, password)
-  print(seed.hex())
-  # f03c00c137fb4b4f5682806701f4ff705d302f07c4b3b5506ff75666d3b7258eca86494a37be9e347c58accdc9e8522edcc4215da938a1dddb5e67f8c8e24270
+  seed_data = get_seed(words, password)
+  print("Type: {}\nSeed: {}".format(seed_data["type"], seed_data["seed"].hex()))
+  # Type: bip39
+  # Seed: 96d48cc015cecbf01b5d06da2ec59fd2849e768147a06e29053b45d800517f4374107d846175ac760535f176d1b7f771461c871c7bb3247f0c63c92727a98829
 ```
 Works with electrum and bip39 mnemonics.
-
-:exclamation: Does not determine the validity of the phrase, will generate a seed from any words
+Possible types: ["electrum", "bip39", "unknown"]

@@ -2,3 +2,4 @@
 dist/
 anyseed.egg-info/
 __pycache__/
+anyseed/__pycache__.
